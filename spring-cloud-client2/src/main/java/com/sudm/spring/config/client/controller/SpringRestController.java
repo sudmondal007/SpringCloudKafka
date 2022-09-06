@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringRestController {
 
-	@Value("${vldn.count.value}")
+	@Value("${test.prop.value}")
 	private String strVal;
 
 	@GetMapping("/strVal")
