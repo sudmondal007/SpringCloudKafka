@@ -64,6 +64,11 @@
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>ERROR</level>
 		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 			<fileNamePattern>${LOG_PATH}/archived/client_error_%d{dd-MM-yyyy}_%i.log
